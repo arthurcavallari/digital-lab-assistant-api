@@ -1,0 +1,1 @@
+Login Complete - <a href="login.php?action=do_logout">Logout</a>

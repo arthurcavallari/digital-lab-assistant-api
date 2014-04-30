@@ -1,0 +1,193 @@
+/* CSS Document */
+
+table.prettyTable {
+  border-collapse: separate;
+  border-spacing: 0;
+  width:100%;
+}
+table.prettyTable th, table.prettyTable td {
+  vertical-align: top;
+}
+
+
+table.prettyTable th {
+  background: #404853;
+  background: linear-gradient(#687587, #404853);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 11px;
+  padding: 9px 8px 7px 8px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+}
+table.prettyTable th.qty, table.prettyTable th.price {
+  padding: 9px 20px 7px 20px;
+  text-align: center;
+}
+table.prettyTable th.item {
+  border-left: 0;
+}
+table.prettyTable th.price {
+  border-right: 0;
+}
+table.prettyTable td {
+  padding: 8px;
+}
+table.prettyTable tbody td {
+  border-bottom: 1px solid #c6c9cc;
+  border-left: 1px solid #e4e7eb;
+  border-right: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+table.prettyTable tbody tr:nth-child(even) td {
+  background: #e8eae9;
+  background: linear-gradient(#f7faf9, #e8eae9);
+  border-left: 1px solid #d5d8db;
+}
+table.prettyTable tbody td.item, table.prettyTable tbody tr:nth-child(even) td.item {
+  border-left: 1px solid #c6c9cc;
+}
+
+
+table.prettyTable tbody tr:nth-child(odd) td {
+  background: #ffffff;
+  border-left: 1px solid #d5d8db;
+}
+table.prettyTable tbody td.item, tbody tr:nth-child(odd) td.item {
+  border-left: 1px solid #c6c9cc;
+}
+
+table.prettyTable tbody td.item {
+  color: #404853;
+  font-weight: bold;
+}
+table.prettyTable tbody td.stock, table.prettyTable tbody td.qty, table.prettyTable tbody td.price {
+  vertical-align: middle;
+}
+table.prettyTable tbody table.prettyTable tbody td.qty {
+  text-align: center;
+}
+table.prettyTable tbody td.centerText {
+  text-align: center;
+  vertical-align: middle;
+}
+table.prettyTable tbody td.reportCount {
+	width:8%;
+}
+table.prettyTable tbody td.actions {
+	width:8%;
+}
+table.prettyTable tbody td.price {
+  border-right: 1px solid #c6c9cc;
+  text-align: right;
+}
+table.prettyTable tbody td:last-child {
+    border-right: 1px solid #c6c9cc;
+}
+
+table.prettyTable tbody tr:hover td
+{
+	background: #e8eae9;
+	background: linear-gradient(#f7faf9, #bcbcff);
+	color: #000;
+}
+
+table.prettyTable tbody tr:hover span
+{
+	color: #000;
+}
+
+table.prettyTable tbody tr td.subHeader {
+  background: #e8eae9;
+  /* background: linear-gradient(#f7faf9, #e8eae9); */
+  background: linear-gradient(#ffffff, #c8cac9);
+  color: #404853;
+  font-size: 14px;
+  font-weight: bold;
+  border-left: 1px solid #d5d8db;
+  width: 8%;
+}
+
+table.prettyTable tfoot td {
+  border-bottom: 1px solid #c6c9cc;
+  border-left: 1px solid #e4e7eb;
+  border-right: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  text-align: right;
+}
+
+table.prettyTable tfoot tr.tableSubFooter td {
+	border-left: 1px solid #c6c9cc;
+  border-right: 1px solid #c6c9cc;
+}
+
+table.prettyTable tfoot tr.sub td {
+  border-bottom: 0;
+  padding: 8px 8px 0 8px;
+}
+table.prettyTable tfoot tr.tax td {
+  padding: 0 8px 8px 8px;
+}
+table.prettyTable tfoot tr.sub td, table.prettyTable tfoot tr.tax td {
+  color: #8c8c8c;
+  background: #ffffff;
+  font-size: 12px;
+}
+table.prettyTable tfoot tr.tableFooter td {
+  background: #e8eae9;
+  background: linear-gradient(#f7faf9, #e8eae9);
+  color: #404853;
+  font-size: 14px;
+  font-weight: bold;
+  border-left: 1px solid #d5d8db;
+  border-right: 1px solid #c6c9cc;
+}
+
+.in {
+  color: #00b515;
+}
+.out {
+  color: #b50000;
+}
+span {
+  color: #8c8c8c;
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+}
+table.prettyTable th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+table.prettyTable th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+table.prettyTable th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+table.prettyTable tfoot tr.tableFooter td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+table.prettyTable tfoot tr.tableFooter td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+table.prettyTable tfoot tr.tableFooter td:only-child{
+    -moz-border-radius: 0 0 6px 6px;
+    -webkit-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+}
